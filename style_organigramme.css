@@ -485,8 +485,6 @@ h1 {
         order: 2; /* Move the menu to appear after the title and brand */
         margin-top: 10px; /* Add margin to separate from the title and brand */
     }
-}
-
 
     /* Adjust width of individual elements inside bigblock */
     .member, .team-member, .column, .image-container, .info {
