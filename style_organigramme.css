@@ -470,6 +470,7 @@ h1 {
     /* Adjust the navbar to take up the full width */
     #navbar {
         width: 100%;
+        background-size: auto; /* Adjust background size */
     }
 
     /* Ensure all elements inside .container are displayed in a single line */
@@ -482,6 +483,12 @@ h1 {
     .header, .bigblock, .contact {
         width: 100%;
     }
+
+    /* Move the menu below the title and brand */
+    .menu {
+        order: 3; /* Move the menu to the end */
+    }
+}
 
     /* Adjust width of individual elements inside bigblock */
     .member, .team-member, .column, .image-container, .info {
