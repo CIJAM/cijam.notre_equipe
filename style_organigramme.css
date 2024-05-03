@@ -466,32 +466,23 @@ h1 {
 }
 
 /* Add media query for screens smaller than 768px (typical phone screens) */
-@media only screen and (max-width: 768px) {
-    /* Adjust the navbar to take up the full width */
+@media (max-width: 768px) {
+    @media only screen and (max-width: 768px) {
     #navbar {
-        width: 100%;
-        background-size: auto; /* Adjust background size */
+        background-position: center;
+        background-size: cover;
+        width: 100%; /* Ensure navbar spans the entire width */
     }
 
-    /* Ensure all elements inside .container are displayed in a single line */
+    /* Adjust layout of bigblock and its contents for smaller screens */
+    .bigblock {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    /* Add more rules to adjust other elements as needed */
+}
+
     .container {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between; /* Ensure elements are evenly spaced */
-    }
-
-    /* Move the menu below the title and brand */
-    .menu {
-        order: 2; /* Move the menu to appear after the title and brand */
-        margin-top: 10px; /* Add margin to separate from the title and brand */
-    }
-
-    /* Adjust width of individual elements inside bigblock */
-    .member, .team-member, .column, .image-container, .info {
-        width: 100%; /* Ensure each element takes up the full width */
-    }
-
-     .container {
         width: 90%; /* Adjust container width for smaller screens */
     }
 
