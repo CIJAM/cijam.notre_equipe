@@ -477,18 +477,16 @@ h1 {
     .container {
         flex-direction: row;
         flex-wrap: nowrap;
-    }
-
-    /* Adjust the width of individual elements inside .container */
-    .header, .bigblock, .contact {
-        width: 100%;
+        justify-content: space-between; /* Ensure elements are evenly spaced */
     }
 
     /* Move the menu below the title and brand */
     .menu {
-        order: 3; /* Move the menu to the end */
+        order: 2; /* Move the menu to appear after the title and brand */
+        margin-top: 10px; /* Add margin to separate from the title and brand */
     }
 }
+
 
     /* Adjust width of individual elements inside bigblock */
     .member, .team-member, .column, .image-container, .info {
