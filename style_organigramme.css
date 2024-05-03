@@ -467,18 +467,20 @@ h1 {
 
 /* Add media query for screens smaller than 768px (typical phone screens) */
 @media only screen and (max-width: 768px) {
-    /* Ensure navbar background spans the entire width */
+    /* Adjust the navbar to take up the full width */
     #navbar {
-        background-position: center;
-        background-size: cover;
-        width: 100%; /* Ensure navbar spans the entire width */
+        width: 100%;
     }
 
-    /* Adjust layout of bigblock and its contents for smaller screens */
-    .bigblock {
-        flex-direction: row; /* Ensure items are laid out in a row */
-        flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
-        justify-content: center; /* Center items horizontally */
+    /* Ensure all elements inside .container are displayed in a single line */
+    .container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    /* Adjust the width of individual elements inside .container */
+    .header, .bigblock, .contact {
+        width: 100%;
     }
 
     /* Adjust width of individual elements inside bigblock */
