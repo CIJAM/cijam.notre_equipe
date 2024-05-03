@@ -466,8 +466,8 @@ h1 {
 }
 
 /* Add media query for screens smaller than 768px (typical phone screens) */
-@media (max-width: 480px) {
-    @media only screen and (max-width: 768px) {
+@media (max-width: 500px) {
+    @media only screen and (max-width: 500px) {
     #navbar {
         background-position: center;
         background-size: cover;
