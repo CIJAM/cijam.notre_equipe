@@ -465,24 +465,58 @@ h1 {
     color: rgba(255, 255, 255, 0.459);
 }
 
-/* Adjustments for smaller screens (phones) */
+/* Add media query for screens smaller than 768px (typical phone screens) */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust container width for smaller screens */
+    }
 
-@media (max-width: 767px) {
-    .image-container,
+    .bigblock {
+        flex-direction: column; /* Change direction to column for smaller screens */
+        align-items: center; /* Center align items for smaller screens */
+    }
+
     .image-containerop {
-        margin-left: 10px; /* Reduce margin for smaller screens */
-        margin-right: 10px; /* Reduce margin for smaller screens */
+        margin-right: 10px; /* Decrease margin for smaller screens */
+        margin-left: 10px; /* Decrease margin for smaller screens */
     }
 
     .info,
     .infoop {
-        font-size: 16px; /* Decrease font size for smaller screens */
         margin-left: 20px; /* Adjust margin for smaller screens */
         margin-right: 20px; /* Adjust margin for smaller screens */
     }
 
+    .info {
+        padding-right: 20px; /* Adjust padding for smaller screens */
+    }
+
+    .infoop {
+        padding-left: 20px; /* Adjust padding for smaller screens */
+    }
+
     .name,
-    .nameop {
-        margin-bottom: 3px; /* Reduce margin for smaller screens */
+    .nameop,
+    .position,
+    .positionop {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+
+    .menu ul {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .menu li {
+        margin-left: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .logo-text {
+        font-size: 25px; /* Decrease font size for smaller screens */
+        padding-right: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .brand {
+        margin-right: 30px; /* Adjust margin for smaller screens */
     }
 }
+
