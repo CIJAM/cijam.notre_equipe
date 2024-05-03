@@ -466,8 +466,8 @@ h1 {
 }
 
 /* Add media query for screens smaller than 768px (typical phone screens) */
-@media (max-width: 500px) {
-    @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 768px) {
+    /* Ensure navbar background spans the entire width */
     #navbar {
         background-position: center;
         background-size: cover;
@@ -476,13 +476,17 @@ h1 {
 
     /* Adjust layout of bigblock and its contents for smaller screens */
     .bigblock {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: row; /* Ensure items are laid out in a row */
+        flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+        justify-content: center; /* Center items horizontally */
     }
 
-    /* Add more rules to adjust other elements as needed */
-}
+    /* Adjust width of individual elements inside bigblock */
+    .member, .team-member, .column, .image-container, .info {
+        width: 100%; /* Ensure each element takes up the full width */
+    }
 
-    .container {
+     .container {
         width: 90%; /* Adjust container width for smaller screens */
     }
 
