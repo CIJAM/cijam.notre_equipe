@@ -228,6 +228,23 @@ h1 {
 }
 
 
+.image-containerop {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.image-containerop img {
+    max-width: 46%;
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+}
+
+.infoop {
+    text-align: center; /* Align text to the right */
+    padding-left: 0; /* Remove padding */
+    padding-right: 20px; /* Add padding to separate from image */
+    border-left: none; /* Remove the border */
+}
+
 
 
 
