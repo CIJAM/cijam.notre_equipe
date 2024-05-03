@@ -88,8 +88,6 @@ body {
     color: #FFFFFF; /* Change text color to white on hover */
 }
 
-
-
 .container {
     width: 80%;
     margin: auto;
@@ -138,9 +136,6 @@ h1 {
     font-family: Termina;
     font-size: 2.2em;
 }
-
-
-
 
 .bigblock {
     display: flex;
@@ -227,7 +222,6 @@ h1 {
     }
 }
 
-
 .image-containerop {
     margin-left: 20px; /* Adjust as needed */
 }
@@ -244,25 +238,6 @@ h1 {
     padding-right: 20px; /* Add padding to separate from image */
     border-left: none; /* Remove the border */
 }
-
-.image-container img,
-.image-containerop img {
-    height: auto;
-    border-radius: 55%; /* Make the image circular */
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
-}
-
-.image-container img:hover,
-.image-containerop img:hover {
-    transform: scale(1.1); /* Upscale the image by 10% on hover */
-}
-
-
-
-
-
-
-
 
 /* Contact section styles */
 .social-container {
@@ -464,4 +439,26 @@ h1 {
 
 .learn-more:active .button-text {
     color: rgba(255, 255, 255, 0.459);
+}
+
+/* Adjustments for smaller screens (phones) */
+
+@media (max-width: 767px) {
+    .image-container,
+    .image-containerop {
+        margin-left: 10px; /* Reduce margin for smaller screens */
+        margin-right: 10px; /* Reduce margin for smaller screens */
+    }
+
+    .info,
+    .infoop {
+        font-size: 16px; /* Decrease font size for smaller screens */
+        margin-left: 20px; /* Adjust margin for smaller screens */
+        margin-right: 20px; /* Adjust margin for smaller screens */
+    }
+
+    .name,
+    .nameop {
+        margin-bottom: 3px; /* Reduce margin for smaller screens */
+    }
 }
