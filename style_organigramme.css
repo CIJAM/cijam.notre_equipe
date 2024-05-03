@@ -195,17 +195,17 @@ h1 {
     flex-direction: column;
     justify-content: center;
     text-align: center; /* Center text horizontally */
-    margin-left: 50px; /* Adjust as needed */
-    margin-right: 50px; /* Adjust as needed */
+    margin-left: 20px; /* Adjust as needed */
+    margin-right: 20px; /* Adjust as needed */
 }
 
 .info {
     border-right: #FFA500 solid 3px;
-    padding-right: 150px;
+    padding-right: 50px;
 }
 
 .infoop {
-    padding-left: 100px;
+    padding-left: 20px;
 }
 
 .name,
@@ -227,23 +227,6 @@ h1 {
     }
 }
 
-
-.image-containerop {
-    margin-left: 20px; /* Adjust as needed */
-}
-
-.image-containerop img {
-    max-width: 46%;
-    height: auto;
-    border-radius: 50%; /* Make the image circular */
-}
-
-.infoop {
-    text-align: center; /* Align text to the right */
-    padding-left: 0; /* Remove padding */
-    padding-right: 20px; /* Add padding to separate from image */
-    border-left: none; /* Remove the border */
-}
 
 
 
