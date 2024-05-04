@@ -468,11 +468,16 @@ h1 {
 /* Add media query for screens smaller than 768px (typical phone screens) */
 @media (max-width: 768px) {
     @media only screen and (max-width: 768px) {
-    #navbar {
-        background-position: center;
-        background-size: cover;
-        width: 100%; /* Ensure navbar spans the entire width */
-    }
+#navbar {
+    width: 100%; /* Make the navbar width 100% */
+    color: #FFFFFF;
+    padding: 0.5% 0;
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url(homespace_home.png);
+    background-size: cover;
+    position: relative;
+    transition: background-image 1s ease;
+}
+
 
     /* Adjust layout of bigblock and its contents for smaller screens */
     .bigblock {
