@@ -139,68 +139,81 @@ h1 {
 
 .bigblock {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center; /* Center align items horizontally */
+    align-items: center; /* Center align items vertically */
 }
 
 .member,
 .team-member {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .column {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    justify-content: right;
+    text-align: right;
 }
+
+.columnop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.column::before {
+    content: '';
+    position: absolute;
+    background-color: #FFA500; /* Border color */
+}
+
+.columnop::before {
+    content: '';
+    position: absolute;
+    background-color: #FFA500; /* Border color */
+}
+
 
 .image-container,
 .image-containerop {
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 .image-containerop {
-    margin-right: 20px; /* Adjust as needed */
+    margin-right: 200px; /* Adjust as needed */
 }
 
 .image-container {
-    margin-left: 20px; /* Adjust as needed */
+    margin-left: 200px; /* Adjust as needed */
 }
 
 .image-container img,
 .image-containerop img {
+    max-width: 200px;
     height: auto;
-    border-radius: 55%; /* Make the image circular */
+    border-radius: 55%;
 }
 
-.image-container img {
-    max-width: 50%;
+.info {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 10px; /* Add padding for spacing */
 }
 
-.image-containerop img {
-    max-width: 46%;
-}
-
-.info,
 .infoop {
     font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center; /* Center text horizontally */
-    margin-left: 50px; /* Adjust as needed */
-    margin-right: 50px; /* Adjust as needed */
-}
-
-.info {
-    border-right: #FFA500 solid 3px;
-    padding-right: 150px;
-}
-
-.infoop {
-    padding-left: 100px;
+    text-align: center;
 }
 
 .name,
@@ -213,6 +226,7 @@ h1 {
 .positionop {
     color: orange;
 }
+
 
 /* Ensure both .member and .team-member are on the same line */
 @media (min-width: 768px) {
