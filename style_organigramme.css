@@ -337,6 +337,14 @@ h1 {
     .menu a:hover {
         color: #FFFFFF; /* Change text color to white on hover */
     }
+
+    .image-containerop {
+        margin-right: 30px; /* Adjust as needed */
+    }
+
+    .image-container {
+        margin-left: 30px; /* Adjust as needed */
+    }
 }
 
 
