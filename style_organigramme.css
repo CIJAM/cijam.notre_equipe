@@ -540,7 +540,6 @@ h1 {
 
 /* Add media query for screens smaller than 768px (typical phone screens) */
 @media only screen and (max-width: 768px) {
-    @media only screen and (max-width: 720px) {
     .container {
         padding: 0;
     }
@@ -608,7 +607,30 @@ h1 {
     }
 
     .bigblock {
+        flex-direction: column;
+    }
+    
+    .columnop,
+    .column {
         flex-direction: row;
         justify-content: space-between;
+    }
+    
+    .image-containerop {
+        margin-right: 5px; /* Decrease margin for smaller screens */
+        margin-left: 5px; /* Decrease margin for smaller screens */
+    }
+
+    .info,
+    .infoop {
+        margin-left: 10px; /* Adjust margin for smaller screens */
+        margin-right: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .name,
+    .nameop,
+    .position,
+    .positionop {
+        font-size: 10px; /* Decrease font size for smaller screens */
     }
 }
