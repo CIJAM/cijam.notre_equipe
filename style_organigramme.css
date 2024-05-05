@@ -327,8 +327,26 @@ h1 {
 
     .image-container img,
     .image-containerop img {
-        max-width: 150px;
+        max-width: 100px;
     }
+
+    .infoop {
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+
+    .info {
+    font-size: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 5px 5px; /* Add padding for spacing */
+    }
+    
 }
 
 
