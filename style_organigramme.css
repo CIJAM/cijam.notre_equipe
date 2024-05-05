@@ -210,7 +210,18 @@ h1 {
 }
 
 
+.image-container img:hover,
+.image-containerop img:hover {
+    transform: scale(1.4); /* Scale the image up by 10% on hover */
+}
 
+.image-container img {
+    max-width: 150px;
+}
+
+.image-containerop img {
+    max-width: 150px;
+}
 
 
 
