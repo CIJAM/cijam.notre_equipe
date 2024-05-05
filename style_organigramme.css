@@ -539,8 +539,7 @@ h1 {
 }
 
 /* Add media query for screens smaller than 768px (typical phone screens) */
-@media (max-width: 768px) {
-    @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     #navbar {
         background-position: center;
         background-size: cover;
@@ -553,7 +552,6 @@ h1 {
     }
 
     /* Add more rules to adjust other elements as needed */
-}
 
     .container {
         width: 90%; /* Adjust container width for smaller screens */
@@ -564,23 +562,16 @@ h1 {
         align-items: center; /* Center align items for smaller screens */
     }
 
-    .image-containerop {
-        margin-right: 10px; /* Decrease margin for smaller screens */
-        margin-left: 10px; /* Decrease margin for smaller screens */
+    .image-containerop,
+    .info,
+    .infoop {
+        margin: 10px 0; /* Adjust margin for smaller screens */
+        text-align: center; /* Center align text for smaller screens */
     }
 
     .info,
     .infoop {
-        margin-left: 20px; /* Adjust margin for smaller screens */
-        margin-right: 20px; /* Adjust margin for smaller screens */
-    }
-
-    .info {
-        padding-right: 20px; /* Adjust padding for smaller screens */
-    }
-
-    .infoop {
-        padding-left: 20px; /* Adjust padding for smaller screens */
+        padding: 0 20px; /* Adjust padding for smaller screens */
     }
 
     .name,
@@ -607,4 +598,3 @@ h1 {
         margin-right: 30px; /* Adjust margin for smaller screens */
     }
 }
-
