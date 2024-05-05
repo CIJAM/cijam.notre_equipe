@@ -540,61 +540,75 @@ h1 {
 
 /* Add media query for screens smaller than 768px (typical phone screens) */
 @media only screen and (max-width: 768px) {
-    #navbar {
-        background-position: center;
-        background-size: cover;
-        width: 100%; /* Ensure navbar spans the entire width */
-    }
-
-    /* Adjust layout of bigblock and its contents for smaller screens */
-    .bigblock {
-        flex-direction: column; /* Stack items vertically */
-    }
-
-    /* Add more rules to adjust other elements as needed */
-
+    @media only screen and (max-width: 720px) {
     .container {
-        width: 90%; /* Adjust container width for smaller screens */
+        padding: 0;
+    }
+    
+    #navbar {
+        padding: 0.5% 0;
+        background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1)), url(homespace_phone.jpg);
+        background-size: cover; /* Ensure the background image fits within the navbar */
+        background-repeat: no-repeat; /* Prevent background image from repeating */
     }
 
-    .bigblock {
-        flex-direction: column; /* Change direction to column for smaller screens */
-        align-items: center; /* Center align items for smaller screens */
+    .header,
+    .logo {
+        display: flex;
+        align-items: center;
     }
 
-    .image-containerop,
-    .info,
-    .infoop {
-        margin: 10px 0; /* Adjust margin for smaller screens */
-        text-align: center; /* Center align text for smaller screens */
+    .image {
+        height: 50px; /* Smaller height */
+        margin: 0;
+        margin-top: 10px;
     }
 
-    .info,
-    .infoop {
-        padding: 0 20px; /* Adjust padding for smaller screens */
+    .logotext {
+        font-size: 20px; /* Bigger font size */
+        color: #008000;
+        margin: 10px;
+        border-right: #FFA500 solid 1px;
+        padding-right: 20px; /* Smaller padding */
+        margin-top: 10px; /* Reset margin */
     }
 
-    .name,
-    .nameop,
-    .position,
-    .positionop {
-        font-size: 16px; /* Decrease font size for smaller screens */
-    }
-
-    .menu ul {
-        margin-left: 20px; /* Adjust margin for smaller screens */
-    }
-
-    .menu li {
-        margin-left: 20px; /* Adjust margin for smaller screens */
-    }
-
-    .logo-text {
-        font-size: 25px; /* Decrease font size for smaller screens */
-        padding-right: 30px; /* Adjust padding for smaller screens */
+    .logotext, 
+    .brand {
+        font-family: Times New Roman, serif;
     }
 
     .brand {
-        margin-right: 30px; /* Adjust margin for smaller screens */
+        font-size: 10px; /* Smaller font size */
+        color: #0B6623;
+        margin-top: 10px; /* Space out from the logo */
+        padding-left: 20px; /* Add padding to separate from image */
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between; /* Align items to left and right */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        flex-direction: column;
+    }
+
+    .menu ul {
+        margin: 0; /* Reset margin */
+    }
+
+    .menu a {
+        padding: 0px 0px; /* Smaller padding */
+        font-size: 8px; /* Bigger font size */
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .menu a:hover {
+        color: #FFFFFF; /* Change text color to white on hover */
+    }
+
+    .bigblock {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
