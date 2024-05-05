@@ -179,6 +179,7 @@ h1 {
     max-width: 200px;
     height: auto;
     border-radius: 55%;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
 }
 
 .info {
@@ -213,14 +214,6 @@ h1 {
 .image-container img:hover,
 .image-containerop img:hover {
     transform: scale(1.4); /* Scale the image up by 10% on hover */
-}
-
-.image-container img {
-    max-width: 150px;
-}
-
-.image-containerop img {
-    max-width: 150px;
 }
 
 
