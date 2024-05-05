@@ -119,13 +119,6 @@ h1 {
 
 
 
-h1 {
-    color: orange;
-    text-align: center;
-    font-family: Termina;
-    font-size: 2.2em;
-}
-
 .bigblock {
     display: flex;
     justify-content: center; /* Center align items horizontally */
@@ -344,6 +337,16 @@ h1 {
 
     .image-container {
         margin-left: 30px; /* Adjust as needed */
+    }
+
+    .columnop,
+    .column {
+        flex-direction: row;
+    }
+
+    .member, 
+    .team-member {
+        flex-direction: column;
     }
 }
 
