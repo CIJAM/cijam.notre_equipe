@@ -250,7 +250,7 @@ h1 {
 
     .image {
         height: 50px; /* Smaller height */
-        margin: 0px;
+        margin: 0;
         margin-top: 10px;
     }
 
@@ -261,7 +261,6 @@ h1 {
         border-right: #FFA500 solid 1px;
         padding-right: 10px; /* Smaller padding */
         margin-top: 10px; /* Reset margin */
-        padding-right: 0px; /* Reset padding */
     }
 
     .logotext, 
@@ -321,23 +320,6 @@ h1 {
         justify-content: space-between;
     }
 
-    .image-containerop {
-        margin-left: 20px; /* Adjust as needed */
-    }
-
-    .image-containerop img {
-        max-width: 46%;
-        height: auto;
-        border-radius: 50%; /* Make the image circular */
-    }
-
-    .infoop {
-        text-align: center; /* Align text to the right */
-        padding-left: 0; /* Remove padding */
-        padding-right: 20px; /* Add padding to separate from image */
-        border-left: none; /* Remove the border */
-    }    
-
     .image-container img,
     .image-containerop img {
         height: auto;
@@ -350,15 +332,12 @@ h1 {
         transform: scale(1.4); /* Scale the image up by 10% on hover */
     }
 
-    .image-container img {
-        max-width: 150px;
-    }
-
+    .image-container img,
     .image-containerop img {
         max-width: 150px;
     }
-
 }
+
 
 
 
