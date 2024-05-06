@@ -291,25 +291,20 @@ h1 {
     }
 
     .image-containerop {
-        margin-right: 30px; /* Adjust as needed */
+        margin-right: 10px; /* Adjust as needed */
     }
 
     .image-container {
-        margin-left: 30px; /* Adjust as needed */
-    }
-
-    .columnop,
-    .column {
-        flex-direction: row;
+        margin-left: 10px; /* Adjust as needed */
     }
 
     .member, 
     .team-member {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .bigblock {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
@@ -327,7 +322,7 @@ h1 {
 
     .image-container img,
     .image-containerop img {
-        max-width: 100px;
+        max-width: 80px;
     }
 
     .infoop {
