@@ -325,6 +325,15 @@ h1 {
         max-width: 80px;
     }
 
+    .image-container img {
+        margin-left: 30px;
+    }
+
+    .image-containerop img {
+        margin-right: 30px;
+    }
+    
+
     .infoop {
     font-size: 8px;
     display: flex;
