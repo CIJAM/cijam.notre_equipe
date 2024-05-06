@@ -224,6 +224,7 @@ h1 {
 
 
 @media only screen and (max-width: 720px) {
+@media only screen and (max-width: 720px) {
     .container {
         padding: 0;
     }
@@ -243,7 +244,7 @@ h1 {
 
     .image {
         height: 50px; /* Smaller height */
-        margin: 0;
+        margin: 0px;
         margin-top: 10px;
     }
 
