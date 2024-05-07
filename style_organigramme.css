@@ -101,120 +101,108 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.bigblock {
-    display: flex;
-    justify-content: center; /* Center align items horizontally */
-    align-items: center; /* Center align items vertically */
+/* Style for the section title */
+.section-title {
+    color: orange; /* Orange color */
+    font-size: 40px; /* Increase font size by 100% */
+    font-family: Times New Roman, serif;
+    margin-bottom: 20px; /* Add more spacing between title and text */
 }
 
-.member,
-.team-member {
+/* Style for the section text */
+.man p {
+    color: #008000;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Style for mission item paragraphs */
+.bro p, 
+.mission-item p {
+    color: #666; /* Dark green color */
+    font-size: 1.2em; /* Increase font size by 100% */
+    margin: 30px;
+}
+
+/* Style for mission items */
+.mission-item {
+    margin-bottom: 40px; /* Increase margin between mission items */
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 40px;
+    justify-content: center; /* Center the content horizontally */
+    color: #394C27; /* Dark green color */
 }
 
-.column {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    justify-content: right;
-    text-align: right;
-}
-
-.columnop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-}
-
-.column::before {
-    content: '';
-    position: absolute;
-    background-color: #FFA500; /* Border color */
-}
-
-.columnop::before {
-    content: '';
-    position: absolute;
-    background-color: #FFA500; /* Border color */
-}
-
-
-.image-container,
-.image-containerop {
-    flex-shrink: 1;
-}
-
-.image-containerop {
-    margin-right: 200px; /* Adjust as needed */
-}
-
-.image-container {
-    margin-left: 200px; /* Adjust as needed */
-}
-
-.image-container img,
-.image-containerop img {
-    max-width: 200px;
+/* Style for mission item images */
+.mission-item .image {
+    max-width: 100%; /* Ensure images take full width of container */
     height: auto;
-    border-radius: 55%;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    border-radius: 50px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add box shadow */
+    margin-right: 40px; /* Add spacing between images and text */
+    transition: transform 0.3s ease; /* Add transition effect for smooth scaling */
 }
 
-.info {
-    font-size: 20px;
+/* Scale images up when hovered */
+.mission-item .image:hover {
+    transform: scale(1.2); /* Increase scale by 10% */
+}
+
+
+/* Align alternate paragraphs to the right */
+.mission-item:nth-child(even) .image {
+    order: 2; /* Reorder image to the right */
+}
+
+.mission-item:nth-child(even) .text {
+    order: 1; /* Reorder text to the left */
+}
+
+
+
+
+
+
+
+
+
+/* CSS for the section */
+.bro {
+    margin: auto; /* Center the text column */
+    padding: 0; /* Add padding to text column */
+    text-align: center; /* Center the paragraph */
+}
+
+.text-column {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 10px 10px; /* Add padding for spacing */
+    flex-direction: row;
+    align-items: center; 
+    justify-content: center; /* Center the content horizontally */
 }
 
-.infoop {
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
+.bro p {
+    font-size: 25px; /* Increase font size by 100% */
+    margin: 30px auto; /* Adjust margin */
+    padding: 0; /* Reset padding */
+    font-weight: bold; 
+    color: #666;
 }
 
-.name,
-.nameop {
-    color: green;
-    margin-bottom: 5px;
+.image-column img,
+.imagecolumn img {
+    max-height: 300px; /* Set a maximum height for the images */
+    width: auto; /* Allow width to adjust automatically */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    transition: transform 0.3s ease; /* Add smooth transition for hover effect */
+    margin: 0 10px; /* Adjust margin */
 }
 
-.position,
-.positionop {
-    color: orange;
-}
-
-
-.image-container img:hover,
-.image-containerop img:hover {
-    transform: scale(1.4); /* Scale the image up by 10% on hover */
+/* Hover effect for images */
+.image-column img:hover,
+.imagecolumn img:hover {
+    transform: scale(1.2); /* Increase scale on hover */
 }
 
 
@@ -224,7 +212,12 @@ h1 {
 
 
 
-@media only screen and (max-width: 720px) {
+
+
+
+
+
+@media only screen and (max-width: 600px) {
     .container {
         width: 100%; /* Adjust container width to fit the screen */
         padding: 0;
@@ -292,69 +285,96 @@ h1 {
     .menu a:hover {
         color: #FFFFFF; /* Change text color to white on hover */
     }
-
-    .image-containerop {
-        margin-right: 10px; /* Adjust as needed */
+    
+    .section-title {
+        color: orange; /* Orange color */
+        font-size: 15px; /* Increase font size by 100% */
+        font-family: Times New Roman, serif;
+        margin-bottom: 15px; /* Add more spacing between title and text */
     }
 
-    .image-container {
-        margin-left: 10px; /* Adjust as needed */
+    .bro {
+	text-items: center;
     }
 
-    .member, 
-    .team-member {
-        flex-direction: row;
+    .bro p {
+        color: #666; /* Dark green color */
+        font-size: 8px; /* Increase font size by 100% */
+        margin: 10px; /* Adjust margin */
+        padding: 0; /* Reset padding */
     }
 
-    .bigblock {
-        flex-direction: column;
-        justify-content: space-between;
+    .image-column img {
+        max-width: 100px; /* Ensure images fill their container */
+        border-radius: 10px; /* Add border-radius for rounded corners */
+        transition: transform 0.3s ease; /* Add smooth transition for hover effect */
     }
 
-    .image-container img,
-    .image-containerop img {
+    .imagecolumn img {
+        max-width: 100px; /* Ensure images fill their container */
+        border-radius: 10px; /* Add border-radius for rounded corners */
+        transition: transform 0.3s ease; /* Add smooth transition for hover effect */
+    }
+
+    .man p {
+        font-size: 10px;
+        color: #008000;
+        text-align: center;
+        align-items: center;
+        font-weight: bold;
+        margin: 5px;
+    }
+    
+    .mission-item p {
+        color: #666; /* Dark green color */
+        font-size: 10px; /* Increase font size by 100% */
+        margin: 30px;
+    }
+    
+    .mission-item .image {
+        max-width: 150px; /* Ensure images take full width of container */
         height: auto;
-        border-radius: 55%; /* Make the image circular */
-        transition: transform 0.3s ease; /* Add transition for smooth scaling */
+        border-radius: 50px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Add box shadow */
+        margin: 10px; /* Add spacing between images and text */
+        transition: transform 0.3s ease; /* Add transition effect for smooth scaling */
     }
 
-    .image-container img:hover,
-    .image-containerop img:hover {
-        transform: scale(1.4); /* Scale the image up by 10% on hover */
+    /* Scale images up when hovered */
+    .mission-item .image:hover {
+        transform: scale(1.3); /* Increase scale by 10% */
     }
 
-    .image-container img,
-    .image-containerop img {
-        max-width: 80px;
+    /* Align alternate paragraphs to the right */
+    .mission-item:nth-child(even) .image {
+        order: 2; /* Reorder image to the right */
     }
 
-    .image-container img {
-        margin-left: 30px;
+    .mission-item:nth-child(even) .text {
+        order: 1; /* Reorder text to the left */
     }
 
-    .image-containerop img {
-        margin-right: 30px;
+    .social-container {
+    color: green;
+    margin-top: 0px;
+    border-top: none
     }
-    
-
-    .infoop {
-    font-size: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    }
-
-    .info {
-    font-size: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 5px 5px; /* Add padding for spacing */
-    }
-    
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -364,6 +384,7 @@ h1 {
 /* Contact section styles */
 .social-container {
     color: green;
+    margin-top: 100px;
 }
 
 .social-container h2 {
@@ -379,6 +400,7 @@ h1 {
     background-color: #FFA500;
     padding: 50px 0;
     text-align: center;
+    margin-top: 20px;
 }
 
 .contact-info p {
@@ -479,8 +501,8 @@ h1 {
     position: relative;
     display: block;
     margin: 0;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     background: #008000;
     border-radius: 1.625rem;
 }
@@ -521,8 +543,8 @@ h1 {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
+    padding: 0.5rem 0;
+    margin: 0 0 0 1.4rem;
     color: rgba(255, 255, 255, 0.493);
     font-weight: 700;
     line-height: 1.6;
@@ -562,5 +584,3 @@ h1 {
 .learn-more:active .button-text {
     color: rgba(255, 255, 255, 0.459);
 }
-
-
